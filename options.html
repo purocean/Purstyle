@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Purstyle</title>
+    <link rel="stylesheet" href="css/foundation.min.css" />
+    <link rel="stylesheet" href="css/options.css" />
+</head>
+<body>
+    <div class="panel">
+
+    </div>
+    <div class="main">
+        <ul id="styles">
+            <li data-id="new" class="selected">新样式</li>
+            <!-- <li data-id="1">style 1</li> -->
+        </ul>
+
+        <div id="detail">
+            <div class="detail-wrapper">
+                <form id="detail-form" action="#">
+                    <input id="detail-id" name="detail-id" type="hidden" value="0" />
+
+                    <label for="detail-name">名称</label>
+                    <input id="detail-name" name="detail-name" type="text" placeholder="给这段样式起个名吧" required="true" />
+
+                    <label for="detail-description">描述</label>
+                    <input id="detail-description" name="detail-description" type="text" placeholder="这段样式能干什么" />
+
+                    <label for="detail-match">匹配对象，正则表达式</label>
+                    <input id="detail-match" name="detail-match" type="text" placeholder="在匹配此正则表达式的网址上生效，不填匹配所有" />
+
+                    <label for="detail-code">样式代码</label>
+                    <textarea id="detail-code" name="detail-code" type="text" placeholder="自定义 CSS 代码" required="true"></textarea>
+
+                    <label for="detail-enabled"><input id="detail-enabled" name="detail-enabled" type="checkbox" checked="true" /> 是否生效</label>
+
+                    <button id="detail-save">保存</button> <button id="detail-delete">删除</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/jquery-2.0.0.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/options.js"></script>
+</body>
+</html>

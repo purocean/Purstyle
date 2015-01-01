@@ -1,0 +1,80 @@
+body {
+    background-color: #fafafa;
+}
+
+.main {
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+    margin-top: 80px;
+    box-shadow: 1px 1px 1px #ccc;
+    border-radius: 2px;
+    background-color: #fff;
+    padding: 12px;
+    height: 550px;
+}
+
+.main::after {
+    display: block;
+    clear: both;
+    content: '';
+}
+
+#styles {
+    list-style: none;
+    margin: 0;
+    width: 25%;
+    float: left;
+    max-height: 520px;
+    overflow-y: auto;
+}
+
+#styles>li {
+    padding: 0;
+    margin: 0;
+    padding: 8px;
+    cursor: pointer;
+    border-bottom: 1px #e8e8e8 solid;
+    color: #666;
+}
+
+#styles>li:first-child {
+    font-weight: bold;
+}
+
+#styles>li.selected {
+    background-color: #f8f8f8;
+    padding-left: 1em;
+    color: #000;
+}
+
+#styles>li:hover {
+    background-color: #fdfdfd;
+    padding-left: 1em;
+    -webkit-transition: padding-left .2s ease-out;
+}
+
+#detail {
+    width: 75%;
+    float: right;
+    padding-left: 12px;
+}
+
+.detail-wrapper {
+    /*background-color: #f8f8f8;*/
+    /*border: 1px #e8e8e8 solid;*/
+}
+
+#detail-code {
+    height: 200px;
+}
+
+button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+button#detail-delete {
+    float: right;
+    display: none;
+}

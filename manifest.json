@@ -1,0 +1,31 @@
+{
+    "name": "Purstyle",
+    "version": "1.0.0",
+    "description": "__MSG_description__",
+    "homepage_url": "https://github.com/purocean/",
+    "manifest_version": 2,
+    "icons": {
+        "128": "images/128.png"
+    },
+    "permissions": [
+        "tabs"
+    ],
+    "background": {
+        "scripts": ["js/background.js", "js/storage.js"]
+    },
+    "content_scripts": [
+        {
+            "matches": ["http://*/*", "https://*/*"],
+            "run_at": "document_start",
+            "all_frames": true,
+            "js": ["js/content.js"]
+        }
+    ],
+    "options_page": "options.html",
+    "browser_action": {
+        "default_icon": "images/19.png",
+        "default_title": "Purstyle",
+        "default_popup": "popup.html"
+    },
+    "default_locale": "zh_CN"
+}
