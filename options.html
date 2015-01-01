@@ -22,13 +22,13 @@
                     <input id="detail-id" name="detail-id" type="hidden" value="0" />
 
                     <label for="detail-name">名称</label>
-                    <input id="detail-name" name="detail-name" type="text" placeholder="给这段样式起个名吧" required="true" />
+                    <input id="detail-name" name="detail-name" type="text" placeholder="给这段样式起个名吧" required="true" maxlength="30" />
 
                     <label for="detail-description">描述</label>
-                    <input id="detail-description" name="detail-description" type="text" placeholder="这段样式能干什么" />
+                    <input id="detail-description" name="detail-description" type="text" placeholder="这段样式能干什么" maxlength="100" />
 
                     <label for="detail-match">匹配对象，正则表达式</label>
-                    <input id="detail-match" name="detail-match" type="text" placeholder="在匹配此正则表达式的网址上生效，不填匹配所有" />
+                    <input id="detail-match" name="detail-match" type="text" placeholder="在匹配此正则表达式的网址上生效，不填匹配所有" maxlength="500" />
 
                     <label for="detail-code">样式代码</label>
                     <textarea id="detail-code" name="detail-code" type="text" placeholder="自定义 CSS 代码" required="true"></textarea>
