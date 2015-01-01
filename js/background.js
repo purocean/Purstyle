@@ -1,5 +1,5 @@
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
-    switch (request.method) {
+    switch(request.method){
         case 'saveStyle':
             StyleStorage.saveStyle(request.data, function(){
                 sendResponse(true);
