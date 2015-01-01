@@ -13,6 +13,9 @@ body {
 label {
     display: block;
     cursor: pointer;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
 }
 
 a, a:hover, a:visited {
